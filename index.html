@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flip Cards</title>
+		<meta charset="utf-8" />
+		<style>
+			td.card {
+				width: 100px;
+				height: 140px;
+				border: 1px solid blue;
+				border-radius: 10px;
+				text-align: center;
+				font-size: 36px;
+				background-color: white;
+				box-shadow: rgb(128, 128, 128) 5px 5px;
+			}
+			td.back {
+				background-image: url("card.png");
+				background-size: 100px 140px;
+			}
+		</style>
+	</head>
+	<body onload="init()">
+		<button onclick="location.reload();">Retry</button>
+		<br>
+		<script src="index.js" async defer></script>
+		<table id="table"></table>
+		<h2>
+			経過時間:<span id="time">0</span>秒
+		</h2>
+	</body>
+</html>
